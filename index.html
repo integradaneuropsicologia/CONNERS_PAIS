@@ -34,7 +34,7 @@
 <div class="wrap">
   <div class="card">
     <h1>Escala de Conners para Pais</h1>
-    <p class="muted">Marque o quanto seu(a) filho(a) apresenta cada comportamento <strong>atualmente</strong>. Escala: 0 = Nunca, 1 = Às vezes, 2 = Frequentemente, 3 = Sempre.</p>
+    <p class="muted">Marque o quanto seu(a) filho(a) apresenta cada comportamento <strong>atualmente</strong>. Escala: <strong>Nunca, Às vezes, Frequentemente, Sempre.</strong></p>
 
     <div class="legend muted">Nunca &nbsp;•&nbsp; Às vezes &nbsp;•&nbsp; Frequentemente &nbsp;•&nbsp; Sempre</div>
 
@@ -84,9 +84,10 @@ function goPortalWithToken(){ const TOKEN=qs("token"); try{ const u=new URL(PORT
 // Cole aqui os 42 itens exatamente como no seu instrumento (um por linha, com ou sem numeração).
 const RAW_ITEMS = `
 Desperta à noite
-Tem medo de novas situações
+Tem medo diante de novas situações
 Tem medo de gente
 Tem medo de estar sozinho
+Preocupa-se com doenças e mortes
 Mostra-se tenso e rígido
 Apresenta sacudidas ou espasmos musculares
 Apresenta tremores
@@ -95,34 +96,34 @@ Sente dores de estômago
 Tem vômitos
 Queixa-se de enfermidades e dores
 Deixa-se levar por outras crianças
-Desafia a autoridade dos adultos
-É valente / arrogante / insolente
-Fica tímido(a) diante dos amigos
-Tem dificuldade em agradar seus amigos
-Enciúma-se com seus irmãos
+Desafia e intimida os demais
+É valente (arrogante) e desrespeita seus superiores (insolente)
+É descarado com os adultos
+É tímido diante dos amigos
+Teme não agradar seus amigos
+Tem amigos
+É malicioso com seus irmãos
 Briga constantemente
-Critica outras crianças
-Apronta na escola
+Critica muito outras crianças
+Aprende na escola
 Gosta de ir à escola
 Tem medo de ir à escola
-Tem amigos
-Adapta-se facilmente
-Desobedece às normas da escola
-Mente, culpando os demais pelos seus erros
-Mente, culpando os pais
+Desobedece as normas da escola
+Mente, culpando os demais dos seus erros
+Realiza roubos de seus pais
 Realiza roubos na escola
-Roubas em lojas, em barracas e em outros lugares
-Tem problemas com a polícia (perfeito)
-Prefere fazer as coisas lentamente (perfeccionismo)
+Rouba em lojas, em barracas e em outros lugares
+Tem problemas com a polícia
+Pretende fazer tudo bem feito (perfeito)
 Necessita fazer sempre as coisas da mesma maneira
 Tem objetivos muito altos (sonhar alto)
-Distraí-se facilmente
-Mostra-se frequentemente inquieto
+Distrai-se facilmente
+Mostra-se nervoso e inquieto
 Não pode ficar quieto
 Sobe em todas as partes
-Desperta muito cedo
-Se começa a fazer alguma coisa repetitivamente, é impossível parar
-Senta-se durante as refeições
+Desperta-se muito cedo
+Não fica quieto durante as refeições
+Se começa a fazer alguma coisa, repetitivamente, é impossível parar
 Seus atos dão a impressão de serem movidos por um motor
 `;
 // Se preferir, substitua o bloco acima pelos textos exatos da sua folha. O parser abaixo remove números e vazios.
